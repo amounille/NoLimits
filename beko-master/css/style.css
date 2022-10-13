@@ -16,6 +16,11 @@
   background-image: linear-gradient(to left, #c6019a 0%, #ff0000 100%);
 }
 
+#imgNo1{
+  border-radius: 35%;
+  box-shadow: 12px 12px 2px 1px black;
+}
+
 /* line 14, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_extends.scss */
 .cta_part .banner_btn_1:hover, .cta_part .banner_btn_2:hover {
   background-image: -webkit-gradient(linear, right top, left top, from(#57ddff), color-stop(51%, #57ddff), to(#57ddff));

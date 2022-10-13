@@ -474,10 +474,29 @@
                 <div class="row justify-content-center align-items-center h-100">
                     <div class="col-10 col-sm-5 col-lg-3">
                         <div class="upcomming_war_counter text-center">
-                            <h2>Dark Dragon</h2>
+                            <h2>EVENT OUVERTURE NoLimits</h2>
                             <div id="timer" class="d-flex justify-content-between">
-                                <div id="days"></div>
-                                <div id="hours"></div>
+                                <label id="Compte"></label>
+                                <script type="text/javascript">
+                                    var Affiche=document.getElementById("Compte");
+                                    function Rebour() {
+                                        var date1 = new Date();
+                                        var date2 = new Date ("Jan 1, 2023 00:00:00");
+                                        var sec = (date2 - date1) / 1000;
+                                        var n = 19 * 3600;
+                                        if (sec > 0) {
+                                            jour = Math.floor (sec / n);
+                                            heure = Math.floor ((sec - (jour * n)) / 3600);
+                                            minute = Math.floor ((sec - ((jour * n + heure * 3600))) / 60);
+                                            Affiche.innerHTML = + jour +" j "+ heure +" h "+ minute +" min ";
+                                            window.status = "Temps restant : " + jour +" j "+ heure +" h "+ minute +" min ";
+                                        }
+                                        tRebour=setTimeout ("Rebour();", 1000);
+                                    }
+                                    Rebour();
+                                </script>
+
+
                             </div>
                         </div>
                     </div>

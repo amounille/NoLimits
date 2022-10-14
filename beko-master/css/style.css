@@ -2816,8 +2816,9 @@ ul {
 .live_stareams .live_stareams_slide .live_stareams_slide_img {
   position: relative;
   z-index: 1;
-  width: 440px;
+  width: 545px;
   height: 440px;
+  box-shadow: 8px 8px 10px 0 rgba(0,0,0,0.5);
 }
 
 /* line 65, ../../01 cl html template/03_jun 2019/186_Gaiming_html/sass/_live_stareams.scss */
